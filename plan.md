@@ -20,3 +20,17 @@ Next, multiple carbon tax models need to be developed.  At a minimum, an uncompe
 
 ##Visualization Plan
 This is highly visual information with geocoded data, so it is an excellent candidate for visualization.  We also need to aggregate on a state level the impact.
+
+##Tasks
+-[] Setup Hive on AWS.
+-[] Import all CSV files into Hive.
+-[] Write script to calculate all distances between ZCTAs and Urban Areas.
+-[] Write script to get distances between ZCTAs andn Urban Areas from Bing Web Services.
+-[] Collect all distance data.
+-[] Develop commuting distance model.
+-[] Develop potential carbon tax models.
+-[] Write scripts to analyze impact of carbon tax models.
+-[] Develop visualizations for data.
+-[] Write report (in Latex) (Due Dec 22).
+-[] Create video and post to YouTube (Due Dec 22).
+-[] Create presentation (Due Dec 15).
