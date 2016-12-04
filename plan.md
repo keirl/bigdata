@@ -5,7 +5,7 @@ We will use PySpark for all processing and Hive for data storage.  The Hive data
 
 ##Data Gathering Plan
 For this analysis, the basic unit (row) will be a <a href="https://www.census.gov/geo/reference/zctas.html">Zip Code Tabulated Area</a>.  ZCTAs are approximately the same as zip codes; however, they have been adjusted to map to actual geographic locations (many zip codes are for commercial locations and PO Boxes only).  Specifically, we will use 2010 ZCTAs rather than 2000.  The Census Bureau provides population and income information for each ZCTA as well as a geocoded location.  This has already been uploaded into the rawdata folder as CSV.
-t
+
 Additionally, the census bureau provides lists of urban areas.  We will limit our analysis to urban areas with over 100,000 people.  There over over 300 cities that meet this criteria.  Most importantly, this provides geocoded information for city locations.  This is in the rawdata folder.
 
 The first step is to determine which ZCTAs could be part of which urban areas.  Any ZCTA area within 75 (subject to change) miles of an urban along a great circle will be part of the distance dataset.  We have all of the geocoded data for each ZCTA and urban area, so the distance for all 30,000 x 300 areas should be calculated.  The distance can be calculated using the Law of Haversines (https://en.wikipedia.org/wiki/Haversine_formula).  All distances should be stored in a table in our Hive database.  Any pair of ZCTA and urban area that meets the distance criteria should be stored in a second table.
@@ -22,15 +22,16 @@ Next, multiple carbon tax models need to be developed.  At a minimum, an uncompe
 This is highly visual information with geocoded data, so it is an excellent candidate for visualization.  We also need to aggregate on a state level the impact.
 
 ##Tasks
--[] Setup Hive on AWS.
--[] Import all CSV files into Hive.
--[] Write script to calculate all distances between ZCTAs and Urban Areas.
--[] Write script to get distances between ZCTAs andn Urban Areas from Bing Web Services.
--[] Collect all distance data.
--[] Develop commuting distance model.
--[] Develop potential carbon tax models.
--[] Write scripts to analyze impact of carbon tax models.
--[] Develop visualizations for data.
--[] Write report (in Latex) (Due Dec 22).
--[] Create video and post to YouTube (Due Dec 22).
--[] Create presentation (Due Dec 15).
+Step-by-step plans:
+- [ ] Setup Hive on AWS.
+- [ ] Import all CSV files into Hive.
+- [ ] Write script to calculate all distances between ZCTAs and Urban Areas.
+- [ ] Write script to get distances between ZCTAs andn Urban Areas from Bing Web Services.
+- [ ] Collect all distance data.
+- [ ] Develop commuting distance model.
+- [ ] Develop potential carbon tax models.
+- [ ] Write scripts to analyze impact of carbon tax models.
+- [ ] Develop visualizations for data.
+- [ ] Write report (in Latex) (Due Dec 22).
+- [ ] Create video and post to YouTube (Due Dec 22).
+- [ ] Create presentation (Due Dec 15).
