@@ -1,0 +1,9 @@
+Gaz_ua
+Gaz_zcta_national
+http://www.census.gov/geo/maps-data/data/gazetteer2010.html
+
+ACS_14_5YR_DP03
+https://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?pid=ACS_14_5YR_DP03&src=pt
+
+DEC_10_DP_DPDP1
+https://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?pid=DEC_10_DP_DPDP1&src=pt
