@@ -23,9 +23,9 @@ This is highly visual information with geocoded data, so it is an excellent cand
 
 ##Tasks
 Step-by-step plans:
-- [ ] Setup Hive on AWS.
-- [ ] Import all CSV files into Hive.
-- [ ] Write script to calculate all distances between ZCTAs and Urban Areas.
+- [X ] Setup Hive on AWS.
+- [X] Import all CSV files into Hive.
+- [X] Write script to calculate all distances between ZCTAs and Urban Areas.
 - [ ] Write script to get distances between ZCTAs andn Urban Areas from Bing Web Services.
 - [ ] Collect all distance data.
 - [ ] Develop commuting distance model.
