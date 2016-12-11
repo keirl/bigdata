@@ -1,7 +1,7 @@
 #The Plan
 
 ##Overview of Architecture
-We will use PySpark for all processing and Hive for data storage.  The Hive data store will be on AWS.  Initial processing will be conducted locally by the analyst, storing the data in the Hive database for other users.  All code will be store remotely on GitHub.
+We will use PySpark for all processing and S3 for data storage.  The Hive data store will be on AWS.  Initial processing will be conducted locally by the analyst, storing the data in the Hive database for other users.  All code will be store remotely on GitHub.
 
 ##Data Gathering Plan
 For this analysis, the basic unit (row) will be a <a href="https://www.census.gov/geo/reference/zctas.html">Zip Code Tabulated Area</a>.  ZCTAs are approximately the same as zip codes; however, they have been adjusted to map to actual geographic locations (many zip codes are for commercial locations and PO Boxes only).  Specifically, we will use 2010 ZCTAs rather than 2000.  The Census Bureau provides population and income information for each ZCTA as well as a geocoded location.  This has already been uploaded into the rawdata folder as CSV.
@@ -23,11 +23,12 @@ This is highly visual information with geocoded data, so it is an excellent cand
 
 ##Tasks
 Step-by-step plans:
-- [X ] Setup Hive on AWS.
+- [X] Setup S3 on AWS.
 - [X] Import all CSV files into Hive.
 - [X] Write script to calculate all distances between ZCTAs and Urban Areas.
-- [ ] Write script to get distances between ZCTAs andn Urban Areas from Bing Web Services.
-- [ ] Collect all distance data.
+- [X] Write script to get distances between ZCTAs andn Urban Areas from Bing Web Services.
+- [X] Collect all distance data.
+- [ ] Upload all data to S3.
 - [ ] Develop commuting distance model.
 - [ ] Develop potential carbon tax models.
 - [ ] Write scripts to analyze impact of carbon tax models.
