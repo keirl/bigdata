@@ -28,11 +28,11 @@ Step-by-step plans:
 - [X] Write script to calculate all distances between ZCTAs and Urban Areas.
 - [X] Write script to get distances between ZCTAs andn Urban Areas from Bing Web Services.
 - [X] Collect all distance data.
-- [ ] Upload all data to S3.
-- [ ] Develop commuting distance model.
-- [ ] Develop potential carbon tax models.
-- [ ] Write scripts to analyze impact of carbon tax models.
-- [ ] Develop visualizations for data.
-- [ ] Write report (in Latex) (Due Dec 22).
-- [ ] Create video and post to YouTube (Due Dec 22).
-- [ ] Create presentation (Due Dec 15).
+- [X] Upload all data to S3.
+- [X] Develop commuting distance model.
+- [X] Develop potential carbon tax models.
+- [X] Write scripts to analyze impact of carbon tax models.
+- [X] Develop visualizations for data.
+- [X] Write report (in Word) (Due Dec 22).
+- [X] Create video and post to YouTube (Due Dec 22).
+- [X] Create presentation (Due Dec 15).
